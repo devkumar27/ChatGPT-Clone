@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="side-bar">
+        <button>+ New Chat</button>
+        <ul className="chat-history">
+          <li>Kuch Bhi!!</li>
+        </ul>
+
+        <nav><p>Made by DEV</p></nav>
+      </section>
+
+      <section className="main">
+        <h1>ChatGPT 3.5</h1>
+        <ul className="feed">
+
+        </ul>
+        <div className="bottom-section"> 
+          <div className="input-container">
+            <input type="text"></input>
+            <div id="submit">Send</div>
+          </div>
+          <p className="info">
+          ChatGPT can make mistakes. Consider checking important information.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
